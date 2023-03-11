@@ -37,7 +37,9 @@ There are several areas for future work in this project, including the explorati
 ## Contributers
 
 DHIRAJ KUMAR BARELA
+
 AKASH MAURYA
+
 SATHVIKA MAMINDLA
 (2ND YEAR: UNDERGRADUATE STUDENTS OF INDIAN INSTITUTE OF INFORMATION TECHNOLOGY VADODARA)
 

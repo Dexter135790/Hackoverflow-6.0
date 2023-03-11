@@ -1,0 +1,26 @@
+{
+  "name": "hackoverflow-6.0",
+  "version": "1.0.0",
+  "description": "## Project for Hackerflow 6.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dexter135790/Hackoverflow-6.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dexter135790/Hackoverflow-6.0/issues"
+  },
+  "homepage": "https://github.com/Dexter135790/Hackoverflow-6.0#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cross-spawn": "^7.0.3",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}

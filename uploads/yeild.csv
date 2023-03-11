@@ -1,0 +1,6 @@
+Amount of Water per Day (in mm),Temperature in ((in °C)),Wind (in km/h),Sunlight (in hours),Soil Fertility in pH),Amount of fertiliser (in kg),Yield (in tons)
+10,25,10,8,6.5,50,3.5
+10,30,15,7,7.0,40,2.8
+10,20,5,9,6.0,60,4.2
+10,28,12,6,7.2,55,3.1
+10,23,8,7,6.8,45,3.3

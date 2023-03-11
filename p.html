@@ -2,9 +2,18 @@
 <html>
 <head>
 	<title>Productivity Calculator</title>
-<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 <style>
+	body {
+	  background-image: url("https://lh3.googleusercontent.com/tRXW51YxuI-L7m_CXuzA2D0ajb2DujXMLJWH7LTtnupv1pcRZXbeVWdUU0QbIUFkA0h1MPXc8SodRM4t1gGEVUkY9l05NPJBMhImUh5UOw");
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;  
+	  background-size: cover;
+	}
+
+	table, th, td {
+  border: 1px solid black;
+}
+
 	body {
 	font-family: Arial, sans-serif;
 	background-color: #f2f2f2;
@@ -13,10 +22,9 @@
 	
 }
 .myimg{
-	width:100px;
-	height:100px;
+	width:300px;
+	height:300px;
 	object-fit:cover;
-	border-radius:50%;
   }
 
 .container {
@@ -40,25 +48,29 @@ form {
 
 label {
 	display: inline-block;
-	margin-bottom: 20px;
-	margin-right: 20px;
+	text-align: right;
+	margin-bottom: 32px;
+	
 }
 
 select, input[type="number"] {
-	padding: 6px;
+	padding: 5px;
+	display: inline-block;
+    float: right;
 	border-radius: 5px;
 	border: none;
-	padding-inline-start: 10%;
+	padding-inline-start: 60%;
 	background-color: #f2f2f2;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-select, input[type="text"] {
-	padding: 6px;
-	border-radius: 5px;
+select, input[type="file"] {
+	padding: 8%;
+	border-radius: 10px;
 	border: none;
+	
 	background-color: #f2f2f2;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 button[type="submit"] {
@@ -78,23 +90,25 @@ button[type="submit"] {
 #result {
 	text-align: center;
 }
+	</style>
 
-</style>
 </head>
 <body>
+	
 	<div class="container">
 		<h1>Productivity Calculator</h1>
-		<form action="/" method="post">
+		<p>This application is used to train a model with the uploaded file and </p>
+		<form action="/" method="post" enctype="multipart/form-data">
 			
-			<label for="Rainfall">Rainfall:</label>
+			<label for="Rainfall">Rainfall (in cm):</label>
 			<input type="number" id="Rainfall" name="Rainfall" min="0" max="1200">
             <br>
 
-			<label for="Temperature">Temperature:</label>
+			<label for="Temperature">Temperature (in <sup>o</sup>C):</label>
 			<input type="number" id="temperature" name="temperature" min="0" max="60">
             <br>
 
-            <label for="Wind">Wind(in Km/h):</label>
+            <label for="Wind">Wind (in Km/h):</label>
 			<input type="number" id="Wind" name="Wind" min="0" max="500">
             <br>
 
@@ -111,17 +125,40 @@ button[type="submit"] {
             <br>
 
 			<label for="Uplaod-Csv">Upload CSV File</label>
-				<input type="file" id="Uplaod-Csv" name="Uplaod-Csv" action="/" method="post">
+				<input type="file" id="Uplaod-Csv" name="file">
 				<br>
+			<div>
+				If file not uploaded the data will be predicted through default data input by us.
+			</div>
 
-			<button type="submit" id="Yeald-Calculate" name="submit">Predicted Yield:</button>
+			<button type="submit" id="Yeald-Calculate" name="submit" value="Upload">Predicted Yield:</button>
 		</form>
 
-		<div id="result-container">
-			<h2 id="result"></h2>
+		<div>
+			The uploaded CSV file should follow the strict format of <br>
+			<table>
+				<tr>
+				<th>Amount of Water per Day (in mm)</th>
+				<th>Temperature in ((in °C))</th>
+				<th>Wind (in km/h)</th>
+				<th>Sunlight (in hours)</th>
+				<th>Soil Fertility (in pH)</th>
+				<th>Amount of fertiliser (in kg)</th>
+				<th>Yield (in tons)</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			</table>
 		</div>
+
 	</div>
-	
 
 </body>
 </html>

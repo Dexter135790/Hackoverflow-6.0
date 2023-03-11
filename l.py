@@ -8,8 +8,15 @@ import json
 input_str = input()
 input_dict = json.loads(input_str)
 
+fileName = 'crop.csv'
+
+if input_dict["File"]=="Yes":
+    fileName = input_dict["FileName"]
+
+
+
 # Reading the dataset file 
-dataset = pd.read_csv('crop.csv')
+dataset = pd.read_csv("uploads/"+fileName)
 X = dataset.iloc[:,:-1].values 
 Y = dataset.iloc[:,-1].values
 

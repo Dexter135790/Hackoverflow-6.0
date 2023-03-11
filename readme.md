@@ -6,6 +6,10 @@
 
 The objective of this project is to predict the crop yield of different crops based on various environmental factors using multiple linear regression. The project aims to assist farmers in maximizing their crop yield by identifying the most important factors that influence crop yield.
 
+## Running the program
+
+Open the application.js in project folder. Run the file. And go to the port number 3000 for localhost.
+
 ## Data Collection and Preparation
 
 The dataset used for this project was our default but the users can upload their dataset to train the model on so that it is flexible. The dataset includes information on the yield of crops depending on various environmental factors such as temperature, precipitation, and soil quality. The data was cleaned and preprocessed to remove missing values and outliers.
